@@ -22,6 +22,7 @@ namespace ObservadorApp
         Zona_Admi zona = null;
         Especie_Admi especie = null;
         Asociacion_Admi asociacion = null;
+        Inicio_sesion inicio = null;
 
         private void btnObservador_Click(object sender, EventArgs e)
         {
@@ -70,6 +71,16 @@ namespace ObservadorApp
                 observacion_Admi = new Observacion_admi();
                 this.Hide();
                 observacion_Admi.Show();
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (inicio == null)
+            {
+                inicio = new Inicio_sesion();
+                this.Hide();
+                inicio.Show();
             }
         }
     }
