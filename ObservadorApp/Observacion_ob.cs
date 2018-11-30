@@ -27,7 +27,6 @@ namespace ObservadorApp
 
         public void limpiar()
         {
-            cmbObservador.Text = "";
             cmbEspecie.Text = "";
             cmbCantidad.Text = "";
             tBFecha.Text = "";
@@ -38,8 +37,8 @@ namespace ObservadorApp
         public void mostrarTodos()
         {
             DataSet datos = new DataSet();
-            datos = TablaObservacionObservador("observador", "idObservador");
-            datGridMuestra.DataSource = datos.Tables["observador"];
+            datos = TablaObservacionObservador("observacion", "idObservacion");
+            datGridMuestra.DataSource = datos.Tables["observacion"];
         }
 
         public DataSet TablaObservacionObservador(string observacion, string idObservacion)
