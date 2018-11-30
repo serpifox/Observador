@@ -49,6 +49,7 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.errorGeneral = new System.Windows.Forms.ErrorProvider(this.components);
             this.tBGenero = new System.Windows.Forms.TextBox();
+            this.btnReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datGridMuestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGeneral)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,7 @@
             this.lblDireccion.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(7, 318);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(108, 27);
+            this.lblDireccion.Size = new System.Drawing.Size(108, 19);
             this.lblDireccion.TabIndex = 54;
             this.lblDireccion.Text = "Descripción:";
             // 
@@ -96,7 +97,7 @@
             this.lblNombre.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(7, 283);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(69, 27);
+            this.lblNombre.Size = new System.Drawing.Size(68, 19);
             this.lblNombre.TabIndex = 52;
             this.lblNombre.Text = "Apodo:";
             // 
@@ -115,7 +116,7 @@
             this.lblCurp.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurp.Location = new System.Drawing.Point(7, 251);
             this.lblCurp.Name = "lblCurp";
-            this.lblCurp.Size = new System.Drawing.Size(81, 27);
+            this.lblCurp.Size = new System.Drawing.Size(80, 19);
             this.lblCurp.TabIndex = 50;
             this.lblCurp.Text = "Nombre:";
             // 
@@ -134,7 +135,7 @@
             this.lblCodigo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(7, 203);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(157, 27);
+            this.lblCodigo.Size = new System.Drawing.Size(162, 19);
             this.lblCodigo.TabIndex = 48;
             this.lblCodigo.Text = "Código de especie:";
             // 
@@ -144,7 +145,7 @@
             this.lblZona.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZona.Location = new System.Drawing.Point(416, 251);
             this.lblZona.Name = "lblZona";
-            this.lblZona.Size = new System.Drawing.Size(72, 27);
+            this.lblZona.Size = new System.Drawing.Size(72, 19);
             this.lblZona.TabIndex = 56;
             this.lblZona.Text = "Género:";
             // 
@@ -257,12 +258,25 @@
             this.tBGenero.Size = new System.Drawing.Size(274, 26);
             this.tBGenero.TabIndex = 74;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnReporte.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Location = new System.Drawing.Point(494, 311);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(139, 26);
+            this.btnReporte.TabIndex = 75;
+            this.btnReporte.Text = "Reporte de especies";
+            this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.Reporte_Click);
+            // 
             // Especie_Admi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 442);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.tBGenero);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnSalir);
@@ -283,7 +297,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.datGridMuestra);
             this.Name = "Especie_Admi";
-            this.Text = "Especie_Admi";
+            this.Text = "Especie";
             ((System.ComponentModel.ISupportInitialize)(this.datGridMuestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGeneral)).EndInit();
             this.ResumeLayout(false);
@@ -313,5 +327,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.ErrorProvider errorGeneral;
         private System.Windows.Forms.TextBox tBGenero;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

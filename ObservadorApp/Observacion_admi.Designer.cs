@@ -51,6 +51,7 @@
             this.tBHora = new System.Windows.Forms.TextBox();
             this.errorGeneral = new System.Windows.Forms.ErrorProvider(this.components);
             this.tBFecha = new System.Windows.Forms.TextBox();
+            this.btnReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datGridMuestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGeneral)).BeginInit();
             this.SuspendLayout();
@@ -85,9 +86,9 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnEliminar.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(327, 404);
+            this.btnEliminar.Location = new System.Drawing.Point(256, 404);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(139, 26);
+            this.btnEliminar.Size = new System.Drawing.Size(103, 26);
             this.btnEliminar.TabIndex = 96;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -98,9 +99,9 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnModificar.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(172, 404);
+            this.btnModificar.Location = new System.Drawing.Point(138, 404);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(139, 26);
+            this.btnModificar.Size = new System.Drawing.Size(103, 26);
             this.btnModificar.TabIndex = 95;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -111,9 +112,9 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnRegistrar.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(17, 404);
+            this.btnRegistrar.Location = new System.Drawing.Point(12, 404);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(139, 26);
+            this.btnRegistrar.Size = new System.Drawing.Size(107, 26);
             this.btnRegistrar.TabIndex = 94;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -126,7 +127,7 @@
             this.lblFecha.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.Location = new System.Drawing.Point(448, 252);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(184, 27);
+            this.lblFecha.Size = new System.Drawing.Size(187, 19);
             this.lblFecha.TabIndex = 92;
             this.lblFecha.Text = "Fecha de observación:";
             // 
@@ -136,7 +137,7 @@
             this.lblCantidad.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.Location = new System.Drawing.Point(12, 320);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(87, 27);
+            this.lblCantidad.Size = new System.Drawing.Size(87, 19);
             this.lblCantidad.TabIndex = 90;
             this.lblCantidad.Text = "Cantidad:";
             // 
@@ -146,7 +147,7 @@
             this.lblEspecie.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEspecie.Location = new System.Drawing.Point(12, 286);
             this.lblEspecie.Name = "lblEspecie";
-            this.lblEspecie.Size = new System.Drawing.Size(74, 27);
+            this.lblEspecie.Size = new System.Drawing.Size(76, 19);
             this.lblEspecie.TabIndex = 88;
             this.lblEspecie.Text = "Especie:";
             // 
@@ -168,7 +169,7 @@
             this.lblObservador.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservador.Location = new System.Drawing.Point(12, 252);
             this.lblObservador.Name = "lblObservador";
-            this.lblObservador.Size = new System.Drawing.Size(105, 27);
+            this.lblObservador.Size = new System.Drawing.Size(107, 19);
             this.lblObservador.TabIndex = 85;
             this.lblObservador.Text = "Observador:";
             // 
@@ -212,7 +213,7 @@
             this.lblCodigo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(12, 197);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(193, 27);
+            this.lblCodigo.Size = new System.Drawing.Size(196, 19);
             this.lblCodigo.TabIndex = 81;
             this.lblCodigo.Text = "Código de observación:";
             // 
@@ -242,7 +243,7 @@
             this.lblHora.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.Location = new System.Drawing.Point(448, 305);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(175, 27);
+            this.lblHora.Size = new System.Drawing.Size(176, 19);
             this.lblHora.TabIndex = 101;
             this.lblHora.Text = "Hora de observación:";
             // 
@@ -301,12 +302,25 @@
             this.tBFecha.Size = new System.Drawing.Size(335, 26);
             this.tBFecha.TabIndex = 109;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnReporte.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Location = new System.Drawing.Point(374, 404);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(181, 26);
+            this.btnReporte.TabIndex = 110;
+            this.btnReporte.Text = "Reporte de observaciones";
+            this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.Reporte_Click);
+            // 
             // Observacion_admi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 442);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.tBFecha);
             this.Controls.Add(this.tBHora);
             this.Controls.Add(this.cmbCantidad);
@@ -362,5 +376,6 @@
         private System.Windows.Forms.TextBox tBHora;
         private System.Windows.Forms.ErrorProvider errorGeneral;
         private System.Windows.Forms.TextBox tBFecha;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

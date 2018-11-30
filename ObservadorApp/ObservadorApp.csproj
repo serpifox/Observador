@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +60,28 @@
       <DependentUpon>Asociacion_Admi.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion%28Prueba%29.cs" />
+    <Compile Include="CrystalEspecie.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalEspecie.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalObservaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalObservaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsEspecie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEspecie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsObservaciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Especie_Admi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +131,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_Especies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Especies.Designer.cs">
+      <DependentUpon>Reporte_Especies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Observaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Observaciones.Designer.cs">
+      <DependentUpon>Reporte_Observaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +157,14 @@
     </Compile>
     <EmbeddedResource Include="Asociacion_Admi.resx">
       <DependentUpon>Asociacion_Admi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalEspecie.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalEspecie.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalObservaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalObservaciones.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Especie_Admi.resx">
       <DependentUpon>Especie_Admi.cs</DependentUpon>
@@ -143,12 +192,40 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Especies.resx">
+      <DependentUpon>Reporte_Especies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Observaciones.resx">
+      <DependentUpon>Reporte_Observaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zona_Admi.resx">
       <DependentUpon>Zona_Admi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="dsEspecie.xsc">
+      <DependentUpon>dsEspecie.xsd</DependentUpon>
+    </None>
+    <None Include="dsEspecie.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEspecie.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsEspecie.xss">
+      <DependentUpon>dsEspecie.xsd</DependentUpon>
+    </None>
+    <None Include="dsObservaciones.xsc">
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
+    </None>
+    <None Include="dsObservaciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsObservaciones.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsObservaciones.xss">
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -173,6 +250,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

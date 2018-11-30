@@ -16,5 +16,10 @@ namespace ObservadorApp
         {
             InitializeComponent();
         }
+
+        private void lblVersion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
