@@ -10,6 +10,22 @@ namespace ObservadorApp{
     class Conexion{
         public static SqlConnection conn = new SqlConnection("Initial Catalog= Observaciones; Data Source=localhost; Integrated Security=SSPI;");
 
+        public DataSet Reporte_Observaciones(string consu, string tabla)
+        {
+            DataSet ConjuntoDatos = new DataSet();
+
+            SqlCommand comando = new SqlCommand(consu, conn);
+
+            SqlDataAdapter adaptador = new SqlDataAdapter();
+
+            adaptador.SelectCommand = comando;
+            conn.Open();
+            adaptador.Fill(ConjuntoDatos, tabla);
+            conn.Close();
+
+            return ConjuntoDatos;
+        }
+
         public DataSet Reporte_Especies(string consu, string tabla)
         {
             DataSet ConjuntoDatos = new DataSet();

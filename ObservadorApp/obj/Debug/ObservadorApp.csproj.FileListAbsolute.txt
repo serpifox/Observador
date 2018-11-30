@@ -55,3 +55,4 @@ C:\Users\serpi\Source\Repos\serpifox\Observador\ObservadorApp\bin\Debug\CrystalD
 C:\Users\serpi\Source\Repos\serpifox\Observador\ObservadorApp\bin\Debug\stdole.dll
 C:\Users\serpi\Source\Repos\serpifox\Observador\ObservadorApp\obj\Debug\ObservadorApp.Reporte_Especies.resources
 C:\Users\serpi\Source\Repos\serpifox\Observador\ObservadorApp\obj\Debug\ObservadorApp.csproj.CopyComplete
+C:\Users\serpi\Source\Repos\serpifox\Observador\ObservadorApp\obj\Debug\ObservadorApp.Reporte_Observaciones.resources

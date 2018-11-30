@@ -66,10 +66,21 @@
       <DependentUpon>CrystalEspecie.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalObservaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalObservaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="dsEspecie.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsEspecie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsObservaciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
     </Compile>
     <Compile Include="Especie_Admi.cs">
       <SubType>Form</SubType>
@@ -120,6 +131,12 @@
     <Compile Include="Reporte_Especies.Designer.cs">
       <DependentUpon>Reporte_Especies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_Observaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Observaciones.Designer.cs">
+      <DependentUpon>Reporte_Observaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +155,10 @@
     <EmbeddedResource Include="CrystalEspecie.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalEspecie.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalObservaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalObservaciones.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Especie_Admi.resx">
       <DependentUpon>Especie_Admi.cs</DependentUpon>
@@ -165,6 +186,9 @@
     <EmbeddedResource Include="Reporte_Especies.resx">
       <DependentUpon>Reporte_Especies.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Observaciones.resx">
+      <DependentUpon>Reporte_Observaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +205,17 @@
     </None>
     <None Include="dsEspecie.xss">
       <DependentUpon>dsEspecie.xsd</DependentUpon>
+    </None>
+    <None Include="dsObservaciones.xsc">
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
+    </None>
+    <None Include="dsObservaciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsObservaciones.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsObservaciones.xss">
+      <DependentUpon>dsObservaciones.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

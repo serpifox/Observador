@@ -50,11 +50,11 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Montserrat SemiBold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitulo.Location = new System.Drawing.Point(100, 15);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(327, 45);
+            this.lblTitulo.Size = new System.Drawing.Size(320, 31);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Resguardo de especies";
             // 
@@ -62,23 +62,24 @@
             // 
             this.lblVersion.AutoSize = true;
             this.lblVersion.BackColor = System.Drawing.Color.Transparent;
-            this.lblVersion.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblVersion.Location = new System.Drawing.Point(452, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(68, 20);
+            this.lblVersion.Size = new System.Drawing.Size(68, 15);
             this.lblVersion.TabIndex = 3;
-            this.lblVersion.Text = "Versión 1.0";
+            this.lblVersion.Text = "Versión 2.0";
+            this.lblVersion.Click += new System.EventHandler(this.lblVersion_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(0, 297);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 80);
+            this.label2.Size = new System.Drawing.Size(189, 60);
             this.label2.TabIndex = 4;
             this.label2.Text = "Desarrollado por:\r\nJorge Armando Castillo Salas\r\nEduardo Javier Contreras Román\r\n" +
     "Manuel Estrada Ramírez";
@@ -87,11 +88,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(342, 357);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 20);
+            this.label3.Size = new System.Drawing.Size(177, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Todos los derechos reservados";
             // 

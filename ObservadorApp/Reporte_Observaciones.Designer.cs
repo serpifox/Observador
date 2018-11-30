@@ -1,6 +1,6 @@
 ﻿namespace ObservadorApp
 {
-    partial class Reporte_Especies
+    partial class Reporte_Observaciones
     {
         /// <summary>
         /// Required designer variable.
@@ -39,18 +39,18 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(743, 450);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(762, 450);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // Reporte_Especies
+            // Reporte_Observaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 450);
+            this.ClientSize = new System.Drawing.Size(762, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "Reporte_Especies";
+            this.Name = "Reporte_Observaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte de especies";
+            this.Text = "Reporte de observaciones";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

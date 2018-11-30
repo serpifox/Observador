@@ -161,6 +161,44 @@ namespace ObservadorApp{
             }
         }
 
+        private void Reporte_Click(object sender, EventArgs e)
+        {
+            dsObservaciones dsPro = new dsObservaciones();
+
+            try
+            {
+                DataSet DS = new DataSet();
+
+                DS = BD.Reporte_Observaciones("select * from Ver_Observaciones",
+                    "Ver_Observaciones");
+
+                if (DS.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningún resultado", "Búsqueda",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    foreach (DataRow fila in DS.Tables["Ver_Observaciones"].Rows)
+                    {
+                        dsPro.dtObservaciones.Rows.Add(fila["nombre"].ToString(),
+                            fila["nombreCientifico"].ToString(), fila["cantidad"].ToString());
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Conexion.conn.Close();
+            }
+
+            Reporte_Observaciones rep = new Reporte_Observaciones(dsPro.dtObservaciones);
+            rep.ShowDialog();
+        }
+
         private void btnMostrar_Click(object sender, EventArgs e){
             mostrarTodos();
         }

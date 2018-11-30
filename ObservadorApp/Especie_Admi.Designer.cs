@@ -297,7 +297,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.datGridMuestra);
             this.Name = "Especie_Admi";
-            this.Text = "Especie_Admi";
+            this.Text = "Especie";
             ((System.ComponentModel.ISupportInitialize)(this.datGridMuestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorGeneral)).EndInit();
             this.ResumeLayout(false);
