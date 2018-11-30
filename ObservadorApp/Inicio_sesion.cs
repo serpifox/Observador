@@ -35,7 +35,7 @@ namespace ObservadorApp{
 
         public void abrirObservaciones(){
             Hide();
-            Observacion_obse observaciones = new Observacion_obse();
+            Observacion_ob observaciones = new Observacion_ob();
             observaciones.ShowDialog();
         }
 

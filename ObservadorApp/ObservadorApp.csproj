@@ -77,6 +77,12 @@
     <Compile Include="Observacion_admi.Designer.cs">
       <DependentUpon>Observacion_admi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Observacion_ob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Observacion_ob.Designer.cs">
+      <DependentUpon>Observacion_ob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Observacion_obse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Observacion_admi.resx">
       <DependentUpon>Observacion_admi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Observacion_ob.resx">
+      <DependentUpon>Observacion_ob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Observacion_obse.resx">
       <DependentUpon>Observacion_obse.cs</DependentUpon>
