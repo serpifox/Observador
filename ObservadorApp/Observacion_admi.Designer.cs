@@ -126,7 +126,7 @@
             this.lblFecha.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.Location = new System.Drawing.Point(448, 252);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(184, 27);
+            this.lblFecha.Size = new System.Drawing.Size(187, 19);
             this.lblFecha.TabIndex = 92;
             this.lblFecha.Text = "Fecha de observación:";
             // 
@@ -136,7 +136,7 @@
             this.lblCantidad.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.Location = new System.Drawing.Point(12, 320);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(87, 27);
+            this.lblCantidad.Size = new System.Drawing.Size(87, 19);
             this.lblCantidad.TabIndex = 90;
             this.lblCantidad.Text = "Cantidad:";
             // 
@@ -146,7 +146,7 @@
             this.lblEspecie.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEspecie.Location = new System.Drawing.Point(12, 286);
             this.lblEspecie.Name = "lblEspecie";
-            this.lblEspecie.Size = new System.Drawing.Size(74, 27);
+            this.lblEspecie.Size = new System.Drawing.Size(76, 19);
             this.lblEspecie.TabIndex = 88;
             this.lblEspecie.Text = "Especie:";
             // 
@@ -168,7 +168,7 @@
             this.lblObservador.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservador.Location = new System.Drawing.Point(12, 252);
             this.lblObservador.Name = "lblObservador";
-            this.lblObservador.Size = new System.Drawing.Size(105, 27);
+            this.lblObservador.Size = new System.Drawing.Size(107, 19);
             this.lblObservador.TabIndex = 85;
             this.lblObservador.Text = "Observador:";
             // 
@@ -212,7 +212,7 @@
             this.lblCodigo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(12, 197);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(193, 27);
+            this.lblCodigo.Size = new System.Drawing.Size(196, 19);
             this.lblCodigo.TabIndex = 81;
             this.lblCodigo.Text = "Código de observación:";
             // 
@@ -242,7 +242,7 @@
             this.lblHora.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.Location = new System.Drawing.Point(448, 305);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(175, 27);
+            this.lblHora.Size = new System.Drawing.Size(176, 19);
             this.lblHora.TabIndex = 101;
             this.lblHora.Text = "Hora de observación:";
             // 

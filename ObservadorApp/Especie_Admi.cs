@@ -140,6 +140,45 @@ namespace ObservadorApp{
             datGridMuestra.DataSource = datos.Tables["especie"];
         }
 
+        private void Reporte_Click(object sender, EventArgs e)
+        {
+            dsEspecie dsPro = new dsEspecie();
+
+            try
+            {
+                DataSet DS = new DataSet();
+
+                DS = BD.Reporte_Especies("select * from Ver_Especies",
+                    "Ver_Especies");
+
+                if (DS.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningún resultado", "Búsqueda",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    foreach (DataRow fila in DS.Tables["Ver_Especies"].Rows)
+                    {
+                        dsPro.dtEspecie.Rows.Add(fila["nombreCientifico"].ToString(), 
+                            fila["nombreVulgar"].ToString(),fila["descripcion"].ToString(),
+                            fila["cantidad"].ToString());
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Conexion.conn.Close();
+            }
+
+            Reporte_Especies rep = new Reporte_Especies(dsPro.dtEspecie);
+            rep.ShowDialog();
+        }
+
         private void btnRegistrar_Click(object sender, EventArgs e){
             Registrar();
         }
